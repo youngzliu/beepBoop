@@ -27,13 +27,13 @@ var divisThree = function(num){
 
 var processInput = function(num){
   if (divisThree(num)){
-    return "I'm sorry, Dave. I'm afraid I can't do that.";
+    return '"I\'m sorry, Dave. I\'m afraid I can\'t do that."';
   }
   else if (containOne(num)){
-    return "Boop!";
+    return '"Boop!"';
   }
   else if (containZero(num)){
-    return "Beep!";
+    return '"Beep!"';
   }
   else {
     return num;
@@ -45,8 +45,9 @@ $(document).ready(function(){
   $("form#beepForm").submit(function(event){
     event.preventDefault();
     var stop = parseInt($("#beepInput").val());
-    for (var i = 0; i <  stop; i++){
-      $("#results").append(i);
+    $("#results").html("");
+    for (var i = 0; i <=  stop; i++){
+      $("#results").append(processInput(i) + ", ");
     }
   })
 });
