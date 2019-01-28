@@ -1,0 +1,11 @@
+body{
+  background-color: black;
+  color: #33FF00;
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
+
+#results{
+  color: red;
+  font-size: 2em;
+  font-weight: bold;
+}

@@ -44,10 +44,11 @@ var processInput = function(num){
 $(document).ready(function(){
   $("form#beepForm").submit(function(event){
     event.preventDefault();
-    var stop = parseInt($("#beepInput").val());
+    var stop = Math.floor(Number($("#beepInput").val()));
     $("#results").html("");
-    for (var i = 0; i <=  stop; i++){
+    for (var i = 0; i < stop; i++){
       $("#results").append(processInput(i) + ", ");
     }
+    $("#results").append(processInput(stop));
   })
 });
