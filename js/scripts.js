@@ -47,9 +47,11 @@ $(document).ready(function(){
     // This allows for exponential and float inputs
     var stop = Math.floor(Number($("#beepInput").val()));
     $("#results").html("");
+    var result = "";
     for (var i = 0; i < stop; i++){
-      $("#results").append(processInput(i) + ", ");
+      result += processInput(i) + ", ";
     }
-    $("#results").append(processInput(stop));
+    result += processInput(stop);
+    $("#results").typedText(result, 50);
   })
 });
