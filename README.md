@@ -39,6 +39,11 @@ below. It is used to practice looping in javascript._
 * _Clone this Repository._
 * _Open index.html in your browser of choice._
 
+## Known Bugs
+
+_If the submit button is pushed again before the text finishes animating, unintelligible output will begin to appear (but eventually when
+it finishes animating the correct output appears back again)._
+
 ## Support and contact details
 
 _For support find me at Epicodus._
@@ -46,6 +51,10 @@ _For support find me at Epicodus._
 ## Technologies Used
 
 _This website was created using HTML, CSS, the Bootstrap CSS file, Javascript, and the jQuery javascript file._
+
+## Credits
+
+_Credit to "Droid047" on jqueryscript.net for the javascript file to animate text._
 
 ### License
 
