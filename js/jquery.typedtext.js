@@ -179,5 +179,5 @@
 
         //enable chaining
         return this;
-    }
+    };
 }(jQuery));

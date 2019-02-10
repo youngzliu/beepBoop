@@ -6,7 +6,7 @@ var containZero = function(num){
   else {
     return false;
   }
-}
+};
 
 var containOne = function(num){
   if (num.toString().match(/1/) != null){
@@ -15,7 +15,7 @@ var containOne = function(num){
   else {
     return false;
   }
-}
+};
 
 var divisThree = function(num){
   if (num % 3 === 0)
@@ -23,10 +23,14 @@ var divisThree = function(num){
   else {
     return false;
   }
-}
+};
 
 var processInput = function(num){
-  if (divisThree(num)){
+  //Edge case for 0
+  if(num === 0){
+    return '"Beep!"';
+  }
+  else if (divisThree(num)){
     return '"I\'m sorry, Dave. I\'m afraid I can\'t do that."';
   }
   else if (containOne(num)){
@@ -38,7 +42,7 @@ var processInput = function(num){
   else {
     return num;
   }
-}
+};
 
 //Front End
 $(document).ready(function(){
@@ -53,5 +57,5 @@ $(document).ready(function(){
     }
     result += processInput(stop);
     $("#results").typedText(result, 50);
-  })
+  });
 });
